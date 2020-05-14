@@ -17,6 +17,8 @@ def getCurrencyRates():
 
      for i in data:
           currencyList.append(Currency(i.get("currencyTypeName"),i.get("chaosEquivalent")))
+
+     currencyList.append(Currency("Chaos Orb",1))
      return currencyList
 #print(currencyList)
 
